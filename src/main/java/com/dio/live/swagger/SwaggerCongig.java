@@ -42,15 +42,15 @@ public class SwaggerCongig {
     public ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("API-REST")
-                .description(" super live code")
+                .description("Projeto Live Code DIO")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .contact(
                         new Contact(
-                                "DIO",
-                                "https://web.digitalinnovation.one",
-                                "contato@digitalinnovationone.com.br")
+                                "Adriano",
+                                "https://github.com/adrianodonisete",
+                                "adrianodonisete@gmail.com")
                 )
                 .build();
     }

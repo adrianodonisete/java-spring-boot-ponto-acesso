@@ -28,7 +28,7 @@ public class Usuario {
     @ManyToOne
     private NivelAcesso nivelAcesso;
     @ManyToOne
-    private  JornadaTrabalho jornadaTrabalho;
+    private JornadaTrabalho jornadaTrabalho;
     private BigDecimal tolerancia;
     private LocalDateTime inicioJornada;
     private LocalDateTime finalJornada;

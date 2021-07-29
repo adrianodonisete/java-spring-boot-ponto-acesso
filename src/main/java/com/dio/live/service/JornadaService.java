@@ -11,7 +11,6 @@ import java.util.Optional;
 @Service
 public class JornadaService {
 
-
     JornadaRepository jornadaRepository;
 
     @Autowired
@@ -19,22 +18,20 @@ public class JornadaService {
         this.jornadaRepository = jornadaRepository;
     }
 
-    public JornadaTrabalho saveJornada(JornadaTrabalho jornadaTrabalho){
-       return jornadaRepository.save(jornadaTrabalho);
-
+    public JornadaTrabalho saveJornada(JornadaTrabalho jornadaTrabalho) {
+        return jornadaRepository.save(jornadaTrabalho);
     }
 
     public List<JornadaTrabalho> findAll() {
-       return   jornadaRepository.findAll();
+        return jornadaRepository.findAll();
     }
 
     public Optional<JornadaTrabalho> getById(Long idJornada) {
         return jornadaRepository.findById(idJornada);
     }
 
-    public JornadaTrabalho updateJornada(JornadaTrabalho jornadaTrabalho){
+    public JornadaTrabalho updateJornada(JornadaTrabalho jornadaTrabalho) {
         return jornadaRepository.save(jornadaTrabalho);
-
     }
 
     public void deleteJornada(Long idJornada) {
